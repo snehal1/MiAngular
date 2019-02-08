@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-3 col-lg-3 imagescon" *ngFor="let user of users">     
+        <!--<img class="img-responsive" src="assets/images/{{ user.company_image }}">-->
+        <h1 class="captionname">{{user.company_name}}</h1>
+        <span class="captionname">{{user.vision}}</span>
+        <h2 class="captionname">{{user.lattitude}}</h2>
+        <h2 class="captionname">{{user.longitude}}</h2>
+        <h2 class="captionname">{{user.phone_numer_primary}}</h2>
+        <h2 class="captionname">{{user.phone_number_secondary}}</h2>
+        <h2 class="captionname">{{user.email_primary}}</h2>
+        <h2 class="captionname">{{user.email_secondary}}</h2>        
+    </div> 
+    <div class="col-md-6 col-lg-6 imagescon" *ngFor="let user of users">     
+        <!--<img class="img-responsive" src="assets/images/{{ user.company_image }}">-->
+        <span class="captionname">{{user.about}}</span>        
+    </div> 
+    <div class="col-md-3 col-lg-3 imagescon" *ngFor="let user of users">     
+        <!--<img class="img-responsive" src="assets/images/{{ user.company_image }}">-->
+        <span class="captionname">{{user.company_name}}</span>        
+    </div>    
+</div>

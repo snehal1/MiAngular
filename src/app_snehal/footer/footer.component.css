@@ -1,0 +1,16 @@
+.footercontainer{
+    border: 0px solid red;
+    padding: 15px 0px 0px;
+    background: #f4f4f4;
+}
+.footer-links{
+text-align: left;
+margin: auto 0;
+}
+.footer-links > li{
+    margin:10px;
+    padding:10px;
+    }
+.bottomline{
+
+}

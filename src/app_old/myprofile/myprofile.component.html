@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">
+            <img class="img-responsive mibanner" src="assets/images/Industry-web.png">
+    <div class="col-md-2 col-lg-2 imagescon" *ngFor="let user of users">     
+        <!--<img class="img-responsive" src="assets/images/{{ user.company_image }}">-->
+        <h1 class="captionname">{{user.company_name}}</h1>
+        <!--<span class="captionname">{{user.vision}}</span>-->
+        <h2>Overview</h2>
+        <div class="overview">
+        <h5 class="captionname">{{user.lattitude}}</h5>
+        <h5 class="captionname">{{user.longitude}}</h5>
+        <h5 class="captionname">{{user.phone_numer_primary}}</h5>
+        <h5 class="captionname">{{user.phone_number_secondary}}</h5>
+        <h5 class="captionname">{{user.email_primary}}</h5>
+        <h5 class="captionname">{{user.email_secondary}}</h5>
+        </div>        
+    </div> 
+    <div class="col-md-7 col-lg-7" *ngFor="let user of users">     
+        
+        <span class="captionname">{{user.about}}</span>        
+    </div> 
+    <div class="col-md-3 col-lg-3">
+            <h3>similar Industries</h3>
+        <app-companies></app-companies>
+        <div class="imagescon" *ngFor="let user of users">     
+        <!--<img class="img-responsive" src="assets/images/{{ user.company_image }}">
+        
+        <span class="captionname">{{user.impressum}}</span>        -->
+    </div>    </div>
+</div>

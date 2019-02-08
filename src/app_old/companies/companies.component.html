@@ -1,0 +1,7 @@
+<div class="container-fluid">
+          <div class="row">
+          <div class="imagescon" *ngFor="let user of users">     
+              <img class="img-responsive cimg" src="assets/images/{{ user.company_image }}">
+              <p class="captionname">{{user.company_name}}</p>        
+          </div>    
+</div>

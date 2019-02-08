@@ -1,0 +1,18 @@
+<div class="divcenter">
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+        <div class="container">
+    <div formGroupName="personalData" novalidate>
+      <input placeholder="Enter Email" formControlName="email">
+      <input placeholder="Mobile Number" formControlName="mobile">
+      <select placeholder="Country" formControlName="country">
+        <option *ngFor="let country of countries"   [value]="country">{{country}}</option>
+      </select>
+    </div>
+    <select placeholder="RequestType" formControlName="requestType">
+      <option *ngFor="let requestType of requestTypes"  [value]="requestType">{{requestType}}</option>
+    </select>
+    <input placeholder="Write Your Comments" formControlName="text">
+    <button type="submit" [disabled]="contactForm.pristine">Sign Up</button>
+    </div>
+  </form>
+  </div>

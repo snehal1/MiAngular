@@ -1,0 +1,13 @@
+<div class="container-fluid">
+		<div class="bannerdiv" >
+				<div><h2>Connect with the right Industry Experts in India</h2></div>
+			</div>
+			<div class="row">
+			<div class="col-md-2 col-lg-2 imagescon" *ngFor="let user of users">     
+					<img class="img-responsive" src="assets/images/{{ user.industry_image }}">
+					<span class="captionname">{{ user.industry_name}}</span>        
+			</div>   
+		</div>  
+		<div class="companies">
+		<app-companies></app-companies> 
+		</div>

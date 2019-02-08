@@ -1,0 +1,9 @@
+<div class="container-fluid">
+          <div class="row">
+          <div class="col-md-2 col-lg-2 imagescon" *ngFor="let user of users"> 
+			<a class="btn" (click)='myfunction(user.company_id)'>
+              <img class="img-responsive" src="assets/images/{{ user.company_image }}" >
+              <span class="captionname">{{user.company_name}}</span>    
+</a>			  
+          </div>    
+</div>
